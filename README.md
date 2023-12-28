@@ -1,5 +1,5 @@
 
-# D: Naveen Kumar.T
+# Developed By: Naveen Kumar.T
 # Reference Number: 23002899
 # Experiment--02-Implementation-of-combinational-logic
 Implementation of combinational logic gates
@@ -32,7 +32,7 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
 
 6.Verification: Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF". Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All. Give the Input Combinations according to the Truth Table amd then simulate the Output waveform
 ## Program:
-```module exp2de(A,B,C,D,F1);
+`module exp2de(A,B,C,D,F1);
    input A,B,C,D;
    output F1;
    wire x1,x2,x3,x4,x5;
@@ -42,12 +42,17 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
    assign x4=(~A)&(B)&(C)&(D);
    assign x5=(B)&(~C)&(D);
    assign F1=x1|x2|x3|x4|x5;
-   endmodule```
+   endmodule`
 
 ## RTL realization
+![285508978-117e5d3b-33bb-4f4b-b712-1f1b7d0e0a64](https://github.com/820NaveenKumar208/Experiment--02-Implementation-of-combinational-logic-/assets/154746066/b74cec1a-e018-4539-b2b3-cc1fc8a5f23d)
 
-## Output:
-## RTL
-## Timing Diagram
+# Truth Table:
+![285499286-82d469bc-98e8-45f5-a969-42fa063b435c](https://github.com/820NaveenKumar208/Experiment--02-Implementation-of-combinational-logic-/assets/154746066/63896d77-b5fb-4072-be76-5104f3bf8cea)
+
+## Timing Diagram:
+![285510363-b3cee5d5-b46a-4324-aa30-46766f306eb1](https://github.com/820NaveenKumar208/Experiment--02-Implementation-of-combinational-logic-/assets/154746066/35181da1-4a0e-473a-a80e-0d9cf5adc9c0)
+
+
 ## Result:
 Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
